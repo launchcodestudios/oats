@@ -1,0 +1,19 @@
+.oats-animate-all,
+.oats-animate-all::before,
+.oats-animate-all::after {
+	transition: all .5s var(--animation-curve);
+}
+
+.oats-fadein {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity .4s;
+}
+
+///
+.oats-fadeout {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 0.4s, opacity 0.4s;
+}
+

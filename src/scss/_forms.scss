@@ -1,0 +1,60 @@
+
+::placeholder {
+	color: #666;
+}
+
+
+/// Text field, area and select are automatically set to 100% 
+input[type=text],
+input[type=url],
+input[type=search],
+input[type=email],
+input[type=password],
+input[type=date],
+input[type=number],
+textarea,
+select {
+	border: var(--field-border);
+	border-radius: .125rem; /* = .br2 */
+	padding: 6px;
+	width: 100%;
+}
+
+/// Text field spacing and readonly.
+input {
+	[type=checkbox] {
+		height: 20px;
+		width: 20px;
+	}
+
+	&:not([type=checkbox]) {
+		padding-bottom: 9px;
+		padding-top: 9px;
+	}
+	
+	&[type=date] {
+		padding-bottom: 8px;
+		padding-top: 8.5px;
+	}
+}
+ 
+/// Textcolor border on focus, blue border on hover.
+input, textarea, select {
+	&:focus {
+		border-color: var(--textcolor);
+		box-shadow: 0 0 0 1px var(--textcolor) inset;
+	}
+	&:hover {
+		border-color: var(--blue);
+		box-shadow: 0 0 0 1px var(--blue) inset;
+	}
+}
+
+
+select {
+	height: 38px;
+}
+
+select[multiple] {
+	height: 100px;
+}

@@ -1,0 +1,15 @@
+:root {
+	--animation-curve: cubic-bezier(.165,.84,.44,1);
+	--field-border-color: var(--silver);
+	--field-border: 1px solid var(--field-border-color);
+	
+	--text-color: var(--near-black);
+	--link-color: var(--blue);
+	--link-hover-color: var(--dark-blue); 
+	
+	--overlay-animation-curve: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+@custom-media --breakpoint-not-small screen and (min-width: 30em);
+@custom-media --breakpoint-medium screen and (min-width: 30em) and (max-width: 60em);
+@custom-media --breakpoint-large screen and (min-width: 60em);

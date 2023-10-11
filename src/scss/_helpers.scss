@@ -1,0 +1,30 @@
+// Sets image to resize to fill container 100% width, auto height.
+.oats-resize {
+	height: auto !important;
+	width: 100%;
+}
+
+// Sets image to only downsize from original dimensions to fill container 100% width, auto height.
+.oats-downsize {
+	height: auto !important;
+	max-width: 100% !important;
+}
+
+
+
+/// Disabled button or field.
+.oats-disabled, [disabled] {
+	background: var(--moon-gray) !important;
+	border-color: var(--moon-gray) !important;
+	color: var(--textcolor) !important;
+	cursor: not-allowed !important;
+}
+
+/// Readonly button or field.
+[readonly] {
+	background: var(--light-gray) !important;
+	border-color: var(--light-gray) !important;
+	color: var(--textcolor) !important;
+	cursor: not-allowed !important;
+}
+
