@@ -58,3 +58,9 @@ select {
 select[multiple] {
 	height: 100px;
 }
+
+.oats-field-required:after {
+	content: '*';
+	margin-left: 5px;
+	color: red;
+}
